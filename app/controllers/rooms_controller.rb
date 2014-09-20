@@ -46,6 +46,7 @@ class RoomsController < ApplicationController
 			queue.delete(pop_key)
 			queue = queue.to_s
 			room.update_attribute(:queue, queue)
+			response.headers['Content-Type'] = 'application/json'
 			render :json => ret.to_json
 		else
 			render :json => nil
