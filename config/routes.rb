@@ -1,14 +1,11 @@
 Rails.application.routes.draw do
   root to: "main#index"
 
-
   post "/new" => "rooms#create"
   get "/:name" => "rooms#view"
   get "/:name/next" => "rooms#next"
   put "/:name/:song_id/up" => "rooms#upvote"
   put "/:name/:song_id/down" => "rooms#downvote"
-
-
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
