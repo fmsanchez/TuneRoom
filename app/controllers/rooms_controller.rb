@@ -6,7 +6,7 @@ class RoomsController < ApplicationController
 		library = params["library"]
 		room = Room.find_by_name(name)
 		if room == nil
-			room = Room.create(name: name, library: library.to_s, queue: '{"exists" => {"popularity" => -10000}}')
+			room = Room.create(name: name, library: library.to_s, queue: '{}')
 			render :json => room.name.to_json
 		else
 			render :json => nil
@@ -33,18 +33,23 @@ class RoomsController < ApplicationController
 	def next
 		room = Room.find_by_name(params[:name])
 		queue = eval(room.queue)
-		popular = queue.first.last
-		pop_key = queue.first.first
-		queue.each do |key, value|
-			if value['popularity'] > popular['popularity']
-				popular = value
-				pop_key = key
+		if queue.count > 0
+			popular = queue.first.last
+			pop_key = queue.first.first
+			queue.each do |key, value|
+				if value['popularity'] > popular['popularity']
+					popular = value
+					pop_key = key
+				end
 			end
+			ret = queue[pop_key]
+			queue.delete(pop_key)
+			queue = queue.to_s
+			room.update_attribute(:queue, queue)
+			render :json => ret.to_json
+		else
+			render :json => nil
 		end
-		queue.delete(pop_key)
-		queue = queue.to_s
-		room.update_attribute(:queue, queue)
-		render :json => popular.to_json
 	end
 
 	def upvote
@@ -78,6 +83,8 @@ class RoomsController < ApplicationController
 		library = eval(room.library)
 		queue = eval(room.queue)
 		song = nil
+		if queue == nil
+			queue = {}
 		if (!queue.has_key?(song_id))
 			song = library[song_id]
 			queue[song_id] = song
