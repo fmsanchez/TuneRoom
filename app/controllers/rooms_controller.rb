@@ -32,7 +32,7 @@ class RoomsController < ApplicationController
 
 	def next
 		room = Room.find(params[:id])
-		queue = JSON.parse(room.queue)
+		queue = eval(room.queue)
 		popular = queue.first.last
 		pop_key = queue.first.first
 		queue.each do |key, value|
@@ -42,7 +42,7 @@ class RoomsController < ApplicationController
 			end
 		end
 		queue.delete(pop_key)
-		queue = queue.to_json
+		queue = queue.to_s
 		room.update_attribute(:queue, queue)
 		render :json => popular.to_json
 	end
@@ -51,11 +51,11 @@ class RoomsController < ApplicationController
 		name = params[:name]
 		song_id = params[:song_id]
 		room = Room.find_by_name(name)
-		queue = JSON.parse(room.queue)
+		queue = eval(room.queue)
 		song = queue[song_id]
 		popularity = song[:popularity]
 		song[:popularity] = popularity + 1
-		room.update_attribute(:queue, queue)
+		room.update_attribute(:queue, queue.to_s)
 		render :json => song.to_json
 	end
 
@@ -63,11 +63,11 @@ class RoomsController < ApplicationController
 		name = params[:name]
 		song_id = params[:song_id]
 		room = Room.find_by_name(name)
-		queue = JSON.parse(room.queue)
+		queue = eval(room.queue)
 		song = queue[song_id]
 		popularity = song[:popularity]
 		song[:popularity] = popularity - 1
-		room.update_attribute(:queue, queue)
+		room.update_attribute(:queue, queue.to_s)
 		render :json => song.to_json
 	end
 
@@ -75,12 +75,13 @@ class RoomsController < ApplicationController
 		name = params[:name]
 		song_id = params[:song_id]
 		room = Room.find_by_name(name)
-		library = JSON.parse(room.library)
-		queue = JSON.parse(room.queue)
+		library = eval(room.library)
+		queue = eval(room.queue)
 		song = nil
 		if (!queue.has_key?(song_id))
 			song = library[song_id]
 			queue[song_id] = {name: song[:name], artist: song[:artist], popularity: 0}
+			room.update_attribute(:queue, queue.to_s)
 		end
 		render :json => song.to_json
 	end
