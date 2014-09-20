@@ -2,10 +2,13 @@
 
 one:
   name: MyString
-  library: MyString
-  queue: MyString
+
+  library: MyText
+  queue: MyText
 
 two:
   name: MyString
-  library: MyString
-  queue: MyString
+  library: MyText
+  queue: MyText
+
+
