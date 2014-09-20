@@ -1,11 +1,13 @@
 class RoomsController < ApplicationController
+	protect_from_forgery except: :create
+	
 	def create
 		name = params[:name]
 		library = params[:library]
 		room = Room.find_by_name(name)
 		if room == nil
 			room = Room.create(name: name, library: library)
-			render :json => room.id
+			render :json => room.name.to_json
 		else
 			render :json => nil
 		end
