@@ -1,9 +1,9 @@
 class RoomsController < ApplicationController
 	protect_from_forgery except: :create
-	
+
 	def create
-		name = params[:name]
-		library = params[:library]
+		name = params["name"]
+		library = params["library"]
 		room = Room.find_by_name(name)
 		if room == nil
 			room = Room.create(name: name, library: library)
