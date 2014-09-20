@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root to: "main#index"
 
   post "/new" => "rooms#create"
+  get "/serve_file" => "rooms#send_mp3"
   get "/:name" => "rooms#view"
   get "/:name/next" => "rooms#next"
   put "/:name/:song_id/up" => "rooms#upvote"
