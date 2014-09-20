@@ -6,7 +6,7 @@ class RoomsController < ApplicationController
 		library = params["library"]
 		room = Room.find_by_name(name)
 		if room == nil
-			room = Room.create(name: name, library: library.to_s)
+			room = Room.create(name: name, library: library.to_s, queue: '')
 			render :json => room.name.to_json
 		else
 			render :json => nil
