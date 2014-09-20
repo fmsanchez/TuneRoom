@@ -1,0 +1,34 @@
+.navbar {
+	margin-bottom: 0 !important;
+}
+
+.black-bg {
+	background: black;
+}
+
+#landing-banner {
+	height: 60vh;
+	color: white;
+	background: black;
+	background: url(headphones1.jpg) no-repeat 200px center fixed;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#landing-banner h1.logo-font {
+	margin-top: 60px;
+	margin-left: 40px;
+	font-size: 6em;
+	/*margin-bottom:0px !important;*/
+}
+
+.logo-font {
+	font-family: 'Dosis', sans;
+}
+
+.slogan {
+	margin-top: 0px;
+	margin-left: 50px;
+}

@@ -1,15 +1,12 @@
 Rails.application.routes.draw do
   root to: "main#index"
 
-  post "room/new" => "rooms#create"
 
-  get "/:id" => "rooms#view"
-
-  get "/:id/next" => "rooms#next"
-
-  put '/:id/:song_id/up' => "rooms#up"
-
-  put '/:id/:song_id/down' => "rooms#down"
+  post "/new" => "rooms#create"
+  get "/:name" => "rooms#view"
+  get "/:name/next" => "rooms#next"
+  put "/:name/:song_id/up" => "rooms#upvote"
+  put "/:name/:song_id/down" => "rooms#downvote"
 
 
 

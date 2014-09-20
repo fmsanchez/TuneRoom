@@ -1,15 +1,20 @@
 class RoomsController < ApplicationController
 	def create
-		@room = Room.create(name: params[:name], library: params[:library], queue: params[:queue])
-		render :json => @room.id
+		name = params[:name]
+		room = Room.find_by_name(name)
+		if room == nil
+			room = Room.create(:name => name)
+			render :json => room.id
+		else
+			render :json => nil
+		end
 	end
 
 	def view
-	end
-
-	def next
-		room = Room.find(params[:id])
-		queue = JSON.parse(room.queue)
-		
+		name = params[:name]
+		@room = Room.find_by_name(name)
+		if @room == nil
+			raise ActionController::RoutingError.new("Not Found")
+		end
 	end
 end
