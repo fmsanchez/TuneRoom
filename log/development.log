@@ -6524,3 +6524,940 @@ ActionController::RoutingError (No route matches [POST] "/new"):
   Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
   Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
   Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.9ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2014-09-20 04:42:05 -0400
+Processing by RoomsController#create as */*
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 3ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.2ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2014-09-20 04:42:21 -0400
+Processing by RoomsController#create as */*
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 5ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.1ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2014-09-20 04:43:10 -0400
+Processing by RoomsController#create as */*
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.9ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (21.9ms)
+
+
+Started GET "/NEW" for 127.0.0.1 at 2014-09-20 04:43:33 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"NEW"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant RoomsController::Room):
+  app/controllers/rooms_controller.rb:7:in `view'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (24.4ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2014-09-20 04:43:37 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"new"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (uninitialized constant RoomsController::Room):
+  app/controllers/rooms_controller.rb:7:in `view'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+
+
+Started GET "/new" for 127.0.0.1 at 2014-09-20 04:43:53 -0400
+Processing by RoomsController#create as HTML
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/new" for 127.0.0.1 at 2014-09-20 04:44:18 -0400
+Processing by RoomsController#create as */*
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:176:in `handle_unverified_request'
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:202:in `handle_unverified_request'
+  actionpack (4.1.4) lib/action_controller/metal/request_forgery_protection.rb:197:in `verify_authenticity_token'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:424:in `block in make_lambda'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:160:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:160:in `block in halting'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.4) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.4) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.4) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.4) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.1.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.4) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.4) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.4) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.4) lib/rails/engine.rb:514:in `call'
+  railties (4.1.4) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/bryan/.rvm/rubies/ruby-2.1.2/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.2ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 11:10:53 -0400
+
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  config/routes.rb:7:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.3ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 11:12:32 -0400
+
+
+Started GET "/assets/headphones1.jpg" for 127.0.0.1 at 2014-09-20 11:12:33 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:15:58 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"myroom"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (uninitialized constant RoomsController::Room):
+  app/controllers/rooms_controller.rb:14:in `view'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.7ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateRooms (20140920151616)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (48.2ms)[0m  [1mCREATE TABLE "rooms" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "library" text, "queue" text, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140920151616"]]
+  [1m[36m (155.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:16:53 -0400
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"myroom"}
+  [1m[36mRoom Load (0.2ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."id" = 0  ORDER BY "rooms"."id" ASC LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="room">
+    2: 	<div id="container">
+    3: 		<h2 id="title"><%= @room.title %></h2>
+    4: 		<div id="songList">
+    5: 			<div class="Song">
+    6: 				<span class="SongTitle">Cancion 1</span>
+  app/views/rooms/view.html.erb:3:in `_app_views_rooms_view_html_erb__564584042654896963_69950362346820'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.5ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:17:59 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"myroom"}
+  [1m[35mRoom Load (0.2ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."id" = 0  ORDER BY "rooms"."id" ASC LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="room">
+    2: 	<div id="container">
+    3: 		<h2 id="title"><%= @room.title %></h2>
+    4: 		<div id="songList">
+    5: 			<div class="Song">
+    6: 				<span class="SongTitle">Cancion 1</span>
+  app/views/rooms/view.html.erb:3:in `_app_views_rooms_view_html_erb__564584042654896963_69950362346820'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.7ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:18:03 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"myroom"}
+  [1m[36mRoom Load (0.2ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."id" = 0  ORDER BY "rooms"."id" ASC LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 5ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="room">
+    2: 	<div id="container">
+    3: 		<h2 id="title"><%= @room.title %></h2>
+    4: 		<div id="songList">
+    5: 			<div class="Song">
+    6: 				<span class="SongTitle">Cancion 1</span>
+  app/views/rooms/view.html.erb:3:in `_app_views_rooms_view_html_erb__564584042654896963_69950362346820'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (18.0ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:18:19 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"myroom"}
+  [1m[35mRoom Load (0.1ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."id" = 0  ORDER BY "rooms"."id" ASC LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="room">
+    2: 	<div id="container">
+    3: 		<h2 id="title"><%= @room.title %></h2>
+    4: 		<div id="songList">
+    5: 			<div class="Song">
+    6: 				<span class="SongTitle">Cancion 1</span>
+  app/views/rooms/view.html.erb:3:in `_app_views_rooms_view_html_erb__564584042654896963_69950362346820'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.7ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:18:35 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"myroom"}
+  [1m[36mRoom Load (0.1ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."id" = 0  ORDER BY "rooms"."id" ASC LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `title' for nil:NilClass):
+    1: <div id="room">
+    2: 	<div id="container">
+    3: 		<h2 id="title"><%= @room.title %></h2>
+    4: 		<div id="songList">
+    5: 			<div class="Song">
+    6: 				<span class="SongTitle">Cancion 1</span>
+  app/views/rooms/view.html.erb:3:in `_app_views_rooms_view_html_erb__564584042654896963_69950362346820'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:20:14 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"myroom"}
+  [1m[35mRoom Load (0.2ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" IS NULL LIMIT 1
+Completed 404 Not Found in 6ms
+
+ActionController::RoutingError (Not Found):
+  app/controllers/rooms_controller.rb:17:in `view'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.4ms)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "rooms" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", "2014-09-20 15:20:36.981174"], ["name", "myroom"], ["updated_at", "2014-09-20 15:20:36.981174"]]
+  [1m[36m (154.1ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:20:38 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"id"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" IS NULL LIMIT 1[0m
+Completed 404 Not Found in 2ms
+
+ActionController::RoutingError (Not Found):
+  app/controllers/rooms_controller.rb:17:in `view'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.4ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.8ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:21:00 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 29ms
+
+ActionView::Template::Error (undefined method `title' for #<Room:0x007f3d2d3112f0>):
+    1: <div id="room">
+    2: 	<div id="container">
+    3: 		<h2 id="title"><%= @room.title %></h2>
+    4: 		<div id="songList">
+    5: 			<div class="Song">
+    6: 				<span class="SongTitle">Cancion 1</span>
+  app/views/rooms/view.html.erb:3:in `_app_views_rooms_view_html_erb__564584042654896963_69950362346820'
+
+
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/bryan/.rvm/gems/ruby-2.1.2/gems/actionpack-4.1.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.0ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 96ms (Views: 92.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:13 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 111ms (Views: 108.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:39 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:48 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:48 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:48 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:48 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:48 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:21:57 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.2ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 107ms (Views: 104.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 11:21:58 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.2ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 109ms (Views: 106.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:10 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 108ms (Views: 103.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:36 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:22:43 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 105ms (Views: 103.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 11:22:44 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 11:24:39 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 99ms (Views: 96.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 11:24:40 -0400
