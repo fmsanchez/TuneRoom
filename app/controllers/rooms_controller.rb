@@ -17,6 +17,15 @@ class RoomsController < ApplicationController
 		if @room == nil
 			raise ActionController::RoutingError.new("Not Found")
 		end
+		respond_to do |format|
+			format.html
+			format.json { render :json => @room.to_json }
+		end
+	end
+
+	def send_mp3
+		file_path = "#{Rails.root}/public/#{params[:filename]}"
+		send_file file_path, :filename => params[:filename], :disposition => 'attachment'
 	end
 
 	def next
