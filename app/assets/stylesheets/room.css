@@ -4,6 +4,7 @@
 
 .col-title {
 	margin-top: 0;
+	font-weight: bold;
 }
 
 .sigmar {
@@ -17,7 +18,7 @@
 /*SONG CSS*/
 .song {
 	border-radius: 5px;
-	border: 1px solid #ddd;
+	border: 2px solid #ddd;
 	padding: 5px;
 	margin-bottom: 10px;
 	cursor: pointer;
@@ -35,6 +36,13 @@
 }
 .song p {
 	margin-bottom: 0;
+}
+.song .active {
+	background: #222;
+	color: white;
+}
+.song .active p {
+	font-weight: bold;
 }
 
 .title {
