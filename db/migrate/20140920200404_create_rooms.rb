@@ -2,8 +2,8 @@ class CreateRooms < ActiveRecord::Migration
   def change
     create_table :rooms do |t|
       t.string :name
-      t.text :library
-      t.text :queue
+      t.string :library
+      t.string :queue
 
       t.timestamps
     end
