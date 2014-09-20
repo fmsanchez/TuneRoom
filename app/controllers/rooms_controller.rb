@@ -86,6 +86,7 @@ class RoomsController < ApplicationController
 		song = nil
 		if queue == nil
 			queue = {}
+		end
 		if (!queue.has_key?(song_id))
 			song = library[song_id]
 			queue[song_id] = song
