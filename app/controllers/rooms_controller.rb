@@ -19,7 +19,7 @@ class RoomsController < ApplicationController
 		end
 		respond_to do |format|
 			format.html
-			format.json { render :json => @room.to_json }
+		format.json { render :json => @room.to_json }
 		end
 	end
 
