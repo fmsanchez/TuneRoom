@@ -8384,3 +8384,3422 @@ Processing by RoomsController#view as JSON
   Parameters: {"name"=>"myroom"}
   [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
 Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 12:11:01 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/assets/headphones1.jpg" for 127.0.0.1 at 2014-09-20 12:11:02 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:11:48 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (6.8ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 105.2ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/rooms.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:11:49 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 137ms (Views: 126.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:33 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:15:42 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.4ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 96ms (Views: 93.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:15:43 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 148ms (Views: 145.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:22:14 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 147ms (Views: 145.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:28:35 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 12:29:41 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 88ms (Views: 85.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:29:41 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:29:42 -0400
+
+
+Started GET "/assets/headphones1.jpg" for 127.0.0.1 at 2014-09-20 12:29:43 -0400
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:30:06 -0400
+Processing by RoomsController#send_mp3 as HTML
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:30:06 -0400
+Processing by RoomsController#send_mp3 as HTML
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:30:10 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:30:10 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:30:10 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:30:10 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:30:10 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:30:10 -0400
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:30:31 -0400
+Processing by RoomsController#send_mp3 as HTML
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 12:30:39 -0400
+Processing by MainController#index as */*
+  Rendered main/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 77ms (Views: 76.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-09-20 12:31:17 -0400
+Processing by MainController#index as HTML
+  Rendered main/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 94ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/assets/headphones1.jpg" for 127.0.0.1 at 2014-09-20 12:31:18 -0400
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:31:38 -0400
+Processing by RoomsController#send_mp3 as HTML
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:31:43 -0400
+Processing by RoomsController#send_mp3 as HTML
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:31:44 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.2ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:31:44 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:32:34 -0400
+Processing by RoomsController#send_mp3 as HTML
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:32:35 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:32:35 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:32:49 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:32:56 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:32:59 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:33:28 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (16.9ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 122ms (Views: 103.2ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:33:40 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 96ms (Views: 94.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:42:37 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:42 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:42 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:42 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:42 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:42 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:42:42 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:43:11 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 234ms (Views: 231.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:12 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:43:27 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.4ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 123ms (Views: 119.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:27 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:27 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:27 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:27 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:28 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:28 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:28 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:29 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:29 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:29 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:29 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:29 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.6ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 87ms (Views: 84.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:44 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 101ms (Views: 98.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:43:56 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:44:22 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 114ms (Views: 111.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:44:23 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:45:01 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 99ms (Views: 95.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:45:02 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 119ms (Views: 116.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:46:03 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 12:47:40 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 86ms (Views: 83.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 12:47:41 -0400
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:48:42 -0400
+Processing by RoomsController#send_mp3 as HTML
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:48:42 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.2ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:48:43 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:52:40 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:53:22 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/serve_file?filename=what.mp3" for 127.0.0.1 at 2014-09-20 12:53:34 -0400
+Processing by RoomsController#send_mp3 as */*
+  Parameters: {"filename"=>"what.mp3"}
+Sent file /home/bryan/BryanCode/TuneRoom/public/what.mp3 (0.1ms)
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 79ms (Views: 75.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:23:52 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 78ms (Views: 76.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:06 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:24:23 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:24 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 85ms (Views: 82.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:36 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 91ms (Views: 88.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:43 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 87ms (Views: 85.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:24:59 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:01 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:01 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:01 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:01 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:01 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.2ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 93ms (Views: 89.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:11 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.2ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 158ms (Views: 155.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:25:45 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.2ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 126ms (Views: 124.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:26:23 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 106ms (Views: 103.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:27:04 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:28:05 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 130ms (Views: 128.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:05 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:05 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:05 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:05 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:06 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:06 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:06 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:06 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:06 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:06 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:06 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:28:51 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.2ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 129ms (Views: 126.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:51 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:28:52 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 143ms (Views: 140.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:31:38 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:32:04 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.2ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 89ms (Views: 87.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:05 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 138ms (Views: 134.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:32:48 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:03 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:03 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:03 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:03 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:03 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:33:25 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 116ms (Views: 113.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:33:26 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:34:21 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 121ms (Views: 116.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:22 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:34:40 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 128ms (Views: 124.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:40 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:40 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:40 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:40 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:40 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:40 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:34:40 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:41 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:41 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:41 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:41 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:34:41 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:35:59 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.2ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 124ms (Views: 122.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:36:00 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:38:54 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 93ms (Views: 90.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:38:54 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:38:54 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:38:54 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:38:54 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:38:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:38:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:38:55 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:38:55 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:38:55 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:38:55 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:38:55 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:38:55 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:39:06 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 90ms (Views: 86.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:07 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 89ms (Views: 85.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:39:24 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:40:51 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 103ms (Views: 100.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:40:52 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:41:08 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:41:08 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:41:08 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:41:08 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:41:08 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:41:08 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:42:06 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 140ms (Views: 138.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:07 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 116ms (Views: 113.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:42:54 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:43:25 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 116ms (Views: 113.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:26 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 118ms (Views: 115.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:43:33 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 142ms (Views: 139.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:44:35 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:46:34 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 105ms (Views: 102.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:34 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:34 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:34 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:35 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 112ms (Views: 108.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:48 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 120ms (Views: 117.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:46:56 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.2ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 131ms (Views: 128.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:00 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 115ms (Views: 113.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:05 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 126ms (Views: 123.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:47:17 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:47 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:47 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:47 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:47 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:47 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:47:47 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:30 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:30 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:30 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:30 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:30 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:30 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (2.0ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 98ms (Views: 94.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:48:52 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 104ms (Views: 101.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:20 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:29 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:29 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:29 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:29 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:29 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:29 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:50:42 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 115ms (Views: 112.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:43 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:50:53 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 118ms (Views: 115.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:50:54 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:51:13 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 114ms (Views: 111.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:13 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:13 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:13 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:13 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:13 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:14 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:14 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:14 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 119ms (Views: 116.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:51:27 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.4ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 142ms (Views: 139.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:55:35 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:43 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:43 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:43 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:43 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:43 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:55:43 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:56:00 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.4ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 131ms (Views: 128.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:01 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:03 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:03 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:03 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:03 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:03 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:03 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 148ms (Views: 146.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:56:52 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:57:13 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 142ms (Views: 139.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:14 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:16 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:16 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:16 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:16 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:16 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:57:45 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 121ms (Views: 119.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:57:46 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:35 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:35 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:35 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:35 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:35 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:35 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 118ms (Views: 115.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:58:56 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 136ms (Views: 133.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 13:59:54 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 14:00:23 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 150ms (Views: 148.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 14:00:24 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 14:01:15 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 142ms (Views: 139.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:15 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:15 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:15 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:16 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 14:01:50 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[36mRoom Load (0.3ms)[0m  [1mSELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1[0m
+  Rendered rooms/view.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 107ms (Views: 104.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 14:01:51 -0400
+
+
+Started GET "/myroom" for 127.0.0.1 at 2014-09-20 14:02:27 -0400
+Processing by RoomsController#view as HTML
+  Parameters: {"name"=>"myroom"}
+  [1m[35mRoom Load (0.3ms)[0m  SELECT  "rooms".* FROM "rooms"  WHERE "rooms"."name" = 'myroom' LIMIT 1
+  Rendered rooms/view.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 145ms (Views: 140.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/index.css?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/main.css?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/room.css?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/rooms.css?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/tuneRoom.css?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/main.js?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/room.js?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-09-20 14:02:28 -0400

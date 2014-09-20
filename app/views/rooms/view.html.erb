@@ -1,16 +1,44 @@
 <div class="container">
-	<h2 id="title" class="page-header"><%= @room.name %></h2>
-	<div id="songList">
-		<div class="Song">
-			<span class="SongTitle">Cancion 1</span>
-			<span class="SongArtist">Artista</span>
-			<span class="UpDownButtons">
-				<i class="fa fa-angle-up"></i>
-				
-				<i class="fa fa-angle-down"></i>
-			</span>
+	<h1 class="page-header"><%= @room.name %></h1>
+	<div class="row">
+		<div id="queue_col" class="col-md-4 col-xs-12">
+			<h2>Queue</h2>
+		</div>
+		<div id="library_col" class="col-md-4 col-xs-12">
+			<h2>Library</h2>
+		</div>
+		<div id="youtube_col" class="col-md-4 col-xs-12">
+			<h2>Youtube</h2>
+			<div class="input-group">
+				<input id="query" type="text" class="form-control">
+				<span class="input-group-btn">
+					<button id="search-button" class="btn btn-default" type="button" disabled="true">Search Youtube</button>
+				</span>
+			</div><!-- /input-group -->
+			<div id="search-container">
+			</div>
 		</div>
 	</div>
 	<%= link_to "What", :controller => 'rooms', :action => 'send_mp3', :filename => 'what.mp3' %>
-
+	<div id="response"></div>
 </div>
+
+    <script>
+		// Your use of the YouTube API must comply with the Terms of Service:
+		// https://developers.google.com/youtube/terms
+
+		// Called automatically when JavaScript client library is loaded.
+		function onClientLoad() {
+		    gapi.client.load('youtube', 'v3', onYouTubeApiLoad);
+		}
+
+		// Called automatically when YouTube API interface is loaded (see line 9).
+		function onYouTubeApiLoad() {
+		    // This API key is intended for use only in this lesson.
+		    // See http://goo.gl/PdPA1 to get a key for your own applications.
+		    var x = gapi.client.setApiKey('AIzaSyBmtjW6gyw2u5cCWS9xovrbFFzxxbJeinM');
+
+			$("#search-button").attr("disabled", false);
+		}
+    </script>
+    <script src="https://apis.google.com/js/client.js?onload=onClientLoad"></script>
