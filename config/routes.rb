@@ -2,7 +2,15 @@ Rails.application.routes.draw do
   root to: "main#index"
 
   post "room/new" => "rooms#create"
-  get "room/:id" => "rooms#view"
+
+  get "/:id" => "rooms#view"
+
+  get "/:id/next" => "rooms#next"
+
+  put '/:id/:song_id/up' => "rooms#up"
+
+  put '/:id/:song_id/down' => "rooms#down"
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
