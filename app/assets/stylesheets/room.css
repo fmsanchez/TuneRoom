@@ -1,3 +1,9 @@
+.bg {
+	background: url("b2.jpg") no-repeat center center;
+	background-size: cover;
+	height: 100%;
+}
+
 .page-header {
 	margin: 20px 0 !important;
 }
@@ -18,10 +24,11 @@
 /*SONG CSS*/
 .song {
 	border-radius: 5px;
-	border: 2px solid #ddd;
+	border: 5px solid #ddd;
 	padding: 5px;
 	margin-bottom: 10px;
 	cursor: pointer;
+	background: black;
 }
 
 .song .thumbnail {
@@ -45,7 +52,7 @@
 	font-weight: bold;
 }
 
-.title {
+.title-row {
 	font-size: 16px;
 	margin-bottom: 5px;
 }
