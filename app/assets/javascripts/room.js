@@ -37,6 +37,7 @@ var ready = function() {
 		console.log("ADDDD", id);
 		$.ajax({
 			url: location.pathname + '/add/' + id,
+			data: {title: $(this).data('title'), thumbnail: $(this).data('thumbnail')},
 			type: "PUT",
 			success: function(data) {
 				console.log('success');
@@ -100,12 +101,13 @@ var ready = function() {
 
 	var poll = function() {
 		$.get(location.pathname + "/queue.json", function(data) {
+			$("#queue_col .queue-pane").html(data);
 			console.log(data);
 			// read cookie
 		});
 	}
 
-	// setInterval(poll, 1000);
+	setInterval(poll, 1000);
 
 	$(document).on('click', '.btn-add', function() {
 		var id = $(this).attr('data-id');

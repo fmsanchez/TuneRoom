@@ -21,9 +21,9 @@ class RoomsController < ApplicationController
 			render "not_found"
 			return
 		end
-		@library = eval(@room.library || "") || []
-		@queue = eval(@room.queue || "") || []
-		@queue.sort_by{|k,v| v['popularity'].to_i}.reverse
+		@library = eval(@room.library || "{}")
+		@queue = eval(@room.queue || "{}")
+		@queue.sort_by{|k,v| -v['popularity'].to_i}
 	end
 
 	def queue
@@ -34,8 +34,8 @@ class RoomsController < ApplicationController
 			return
 		end
 		@queue = eval(@room.queue || "") || []
-		@queue.sort_by{|k,v| -v['popularity'].to_i}
-		render :partial => "songs_partial", :locals => {:songs => @queue, :queue => true}
+		@queue = @queue.sort_by{|k,v| v['popularity'].to_i}.reverse
+		render :partial => "songs_partial.html", :locals => {:songs => @queue, :queue => true}
 	end
 
 	def send_mp3
@@ -94,28 +94,26 @@ class RoomsController < ApplicationController
 	def add_to_queue
 		name = params[:name]
 		song_id = params[:song_id].to_s
+
 		room = Room.find_by_name(name)
+		queue = eval(room.queue || "{}")
 
 		if song_id.include?"youtube"
 			video_id = song_id.split("youtube-")[1]
-			puts video_id
 			url = "http://www.youtube.com/watch?v="+video_id
-			command = Process.spawn `#{Rails.root}/lib/youtube-dl --extract-audio --audio-format mp3 #{url} -o #{Rails.root}/public/#{song_id}.mp3
-`
-			puts command
+			Process.spawn "#{Rails.root}/lib/youtube-dl --extract-audio --audio-format mp3 #{url} -o #{Rails.root}/public/#{song_id}.mp3"
+			song = {"title" => params[:title], "thumbnail" => params[:thumbnail], "popularity" => 0}
+		else
+			library = eval(room.library || "{}")
+			if (!queue.has_key?(song_id))
+				song = library[song_id]
+			end
 		end
 
-		library = eval(room.library || "{}")
-		queue = eval(room.queue || "{}")
-		song = nil
-		if queue == nil
-			queue = {}
-		end
-		if (!queue.has_key?(song_id))
-			song = library[song_id]
-			queue[song_id] = song
-			room.update_attribute(:queue, queue.to_s)
-		end
+		queue[song_id] = song
+		room.update_attribute(:queue, queue.to_s)
+
+# ERROR: Unable to decrypt signature, subkeys lengths 43.41 not supported; retrying might work; please report this issue on http://yt-dl.org/bug
 		render :json => song.to_json
 	end
 

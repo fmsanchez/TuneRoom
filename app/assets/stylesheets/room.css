@@ -41,6 +41,9 @@
 	margin-right: 10px;
 	margin-bottom: 0;
 }
+.song .thumbnail img {
+	height: 50px;
+}
 .song .lead {
 	font-size: 36px;
 }

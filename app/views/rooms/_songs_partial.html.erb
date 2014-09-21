@@ -24,7 +24,7 @@
 				<i class="fa fa-thumbs-down"></i>
 			</button>
 		<% else %>
-			<button data-id="<%= key %>" class="pull-right btn btn-sm btn-info btn-add">
+			<button data-id="<%= key %>" data-title="<%= song['title'] %>" data-thumbnail="<%= song['thumbnail'] %>" class="pull-right btn btn-sm btn-info btn-add">
 				<i class="fa fa-plus"></i>
 			</button>
 		<% end %>
