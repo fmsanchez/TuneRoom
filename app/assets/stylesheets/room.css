@@ -38,7 +38,6 @@
 .song .title {
 	height: 20px;
 	overflow: hidden;
-	text-overflow; ellipsis;
 }
 .song button {
 	margin-top: 6px;

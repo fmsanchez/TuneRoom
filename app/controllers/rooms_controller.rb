@@ -3,7 +3,7 @@ class RoomsController < ApplicationController
 
 	def create
 		name = params["name"]
-		name = name.sub!(' ', '-')
+		# name = name.sub!(' ', '-')
 		library = params["library"]
 		p name
 		room = Room.find_by_name(name)
@@ -51,7 +51,7 @@ class RoomsController < ApplicationController
 			popular = queue.first.last
 			pop_key = queue.first.first
 			queue.each do |key, value|
-				if value['popularity'] > popular['popularity']
+				if value['popularity'].to_i > popular['popularity'].to_i
 					popular = value
 					pop_key = key
 				end
@@ -64,7 +64,13 @@ class RoomsController < ApplicationController
 			response.headers['Content-Type'] = 'application/json'
 			render :json => ret.to_json
 		else
-			render :json => nil
+			library = eval(room.library)
+			id = library.first.first
+			ret = library[id]
+			ret['id'] = id
+
+			response.headers['Content-Type'] = 'application/json'
+			render :json => ret.to_json
 		end
 	end
 
