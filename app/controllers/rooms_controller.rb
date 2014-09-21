@@ -100,13 +100,13 @@ class RoomsController < ApplicationController
 			video_id = song_id.split("youtube-")[1]
 			puts video_id
 			url = "http://www.youtube.com/watch?v="+video_id
-			command = `youtube-dl --extract-audio --audio-format mp3 #{url} -o #{Rails.root}/public/#{song_id}.mp3
+			command = Process.spawn `#{Rails.root}/lib/youtube-dl --extract-audio --audio-format mp3 #{url} -o #{Rails.root}/public/#{song_id}.mp3
 `
 			puts command
 		end
 
-		library = eval(room.library)
-		queue = eval(room.queue)
+		library = eval(room.library || "{}")
+		queue = eval(room.queue || "{}")
 		song = nil
 		if queue == nil
 			queue = {}

@@ -1,19 +1,4 @@
 var ready = function() {
-<<<<<<< HEAD
-	var youtube_result_template = function(item) {
-		var html = $('\
-				<div class="yt_result">\
-					<img src="https://i.ytimg.com/vi/qCL5aiK1-7g/default.jpg" class="thumbnail">\
-					<p class="">Arcangel - Tremenda Sata</p>\
-					<div style="clear: both;"></div>\
-				</div>\
-			');
-		$(html.find("img")[0]).attr("src", item.snippet.thumbnails.default.url);
-		$(html.find("p")[0]).text(item.snippet.title);
-		return html;
-	}
-=======
->>>>>>> 23e76a75d02aa18f089758e9adc5256b65d74a17
 
 	// Search for a specified string.
 	var search = function() {
@@ -47,9 +32,9 @@ var ready = function() {
 		}
 	});
 
-<<<<<<< HEAD
 	$(document).on('click', '.btn-add', function() {
-		var id = $(this).attr('data-id');
+		var id = $(this).data('id');
+		console.log("ADDDD", id);
 		$.ajax({
 			url: location.pathname + '/add/' + id,
 			type: "PUT",
@@ -112,18 +97,15 @@ var ready = function() {
 		}
 	});
 
-}
-
-
 
 	var poll = function() {
-		$.get(location.pathname + ".json", function(data) {
+		$.get(location.pathname + "/queue.json", function(data) {
 			console.log(data);
 			// read cookie
 		});
 	}
 
-	// setInterval(poll, 10000);
+	// setInterval(poll, 1000);
 
 	$(document).on('click', '.btn-add', function() {
 		var id = $(this).attr('data-id');
