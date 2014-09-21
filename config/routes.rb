@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   get "/queue" => "rooms#queue"
   get "/:name" => "rooms#view"
   get "/:name/next" => "rooms#next"
-  put "/:name/:song_id/up" => "rooms#upvote"
-  put "/:name/:song_id/down" => "rooms#downvote"
+  put "/:name/:song_id/up/:ammount" => "rooms#up_vote"
+  put "/:name/:song_id/down/:ammount" => "rooms#down_vote"
   put "/:name/add/:song_id" =>"rooms#add_to_queue"
 
   # The priority is based upon order of creation: first created -> highest priority.

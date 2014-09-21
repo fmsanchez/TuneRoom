@@ -67,26 +67,26 @@ class RoomsController < ApplicationController
 		end
 	end
 
-	def upvote
+	def up_vote
 		name = params[:name]
 		song_id = params[:song_id].to_s
 		room = Room.find_by_name(name)
 		queue = eval(room.queue)
 		song = queue[song_id]
 		popularity = song[:popularity]
-		song["popularity"] = popularity + 1
+		song["popularity"] = (song["popularity"].to_i + params[:ammount].to_i).to_s
 		room.update_attribute(:queue, queue.to_s)
 		render :json => song.to_json
 	end
 
-	def downvote
+	def down_vote
 		name = params[:name]
 		song_id = params[:song_id].to_s
 		room = Room.find_by_name(name)
 		queue = eval(room.queue)
 		song = queue[song_id]
 		popularity = song[:popularity]
-		song["popularity"] = popularity - 1
+		song["popularity"] = (song["popularity"].to_i - params[:ammount].to_i).to_s
 		room.update_attribute(:queue, queue.to_s)
 		render :json => song.to_json
 	end
