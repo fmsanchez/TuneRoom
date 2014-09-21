@@ -44,6 +44,12 @@ var ready = function() {
 		}
 	});
 
+	$(document).on('click', '.btn-add', function() {
+		var id = $(this).attr('data-id');
+		$.get(location.pathname + '/add/' + id, function(data) {
+
+		});
+	})
 
 	queue = Queue();
 

@@ -11,9 +11,9 @@
 						<p class="lead text-center">1</p>
 					</div>
 					<p class="title"><%= song['title'] %> <br> <small><%= song['artist'] %></small></p>
-					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default"><i class="fa fa-thumbs-up"></i></button>
+					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default tm-up"><i class="fa fa-thumbs-up"></i></button>
 					<span class="pull-right popularity"><%= song['popularity'] %></span>
-					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default"><i class="fa fa-thumbs-down"></i></button>
+					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default tm-down"><i class="fa fa-thumbs-down"></i></button>
 					<p class="text-muted">3:04</p>
 					<div style="clear: both;"></div>
 				</div>
@@ -36,7 +36,7 @@
 						<p class="lead text-center"><%= count %></p>
 					</div>
 					<p class="title"><%= song['title'] %> <br> <small><%= song['artist'] %></small></p>
-					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-info"><i class="fa fa-plus"></i></button>
+					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-info btn-add"><i class="fa fa-plus"></i></button>
 					<p class="text-muted">3:04</p>
 					<div style="clear: both;"></div>
 				</div>
