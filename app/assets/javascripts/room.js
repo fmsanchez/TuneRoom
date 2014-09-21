@@ -47,7 +47,6 @@ var ready = function() {
 
 function Song() {
 	var title = "";
-	var 
 }
 
 function Queue() {

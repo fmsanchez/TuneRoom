@@ -3,6 +3,7 @@ class RoomsController < ApplicationController
 
 	def create
 		name = params["name"]
+		name = name.sub!(' ', '-')
 		library = params["library"]
 		room = Room.find_by_name(name)
 		if room == nil
@@ -16,6 +17,8 @@ class RoomsController < ApplicationController
 	def view
 		name = params[:name]
 		@room = Room.find_by_name(name)
+		@library = eval(@room.library)
+		@queue = eval(@room.queue).sort_by{|k,v| v['popularity'].to_i}.reverse
 		if @room == nil
 			raise ActionController::RoutingError.new("Not Found")
 		end
