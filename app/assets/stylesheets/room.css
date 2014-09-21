@@ -1,3 +1,5 @@
+
+
 .page-header {
 	margin: 20px 0 !important;
 }
@@ -47,6 +49,7 @@
 .song .active p {
 	font-weight: bold;
 }
+
 .popularity {
 	height: 35px;
 	width: 20px;
