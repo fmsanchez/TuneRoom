@@ -1,8 +1,4 @@
-.bg {
-	background: url("b2.jpg") no-repeat center center;
-	background-size: cover;
-	height: 100%;
-}
+
 
 .page-header {
 	margin: 20px 0 !important;
@@ -24,13 +20,15 @@
 /*SONG CSS*/
 .song {
 	border-radius: 5px;
-	border: 5px solid #ddd;
+	border: 2px solid #ddd;
 	padding: 5px;
 	margin-bottom: 10px;
 	cursor: pointer;
-	background: black;
 }
-
+.song-pane {
+	max-height: 400px;
+	overflow-y: scroll;
+}
 .song .thumbnail {
 	width: 60px;
 	height: 60px;
@@ -52,9 +50,21 @@
 	font-weight: bold;
 }
 
-.title-row {
-	font-size: 16px;
+.popularity {
+	height: 35px;
+	width: 20px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 35px;
+	vertical-align: middle;
+}
+.title {
+	font-size: 15px;
 	margin-bottom: 5px;
+}
+.queue-pane {
+	max-height: 445px;
+	overflow-y: scroll;
 }
 
 .song button {

@@ -55,6 +55,10 @@ var ready = function() {
 	repaintLibrary(library);
 }
 
+
+function Song() {
+	var title = "";
+
 function Library() {
 	var songs = {};
 	return {
@@ -68,7 +72,7 @@ function Library() {
 			delete songs[id];
 		}
 	}
-}
+
 
 function Queue() {
 	var songs = [];
