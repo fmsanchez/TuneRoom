@@ -1,17 +1,56 @@
-#youtube_col .input-group {
-	margin: 20px;
+.page-header {
+	margin: 20px 0 !important;
 }
 
-#youtube_col .yt_result {
-	border-radius: 3px;
-	border: 1px solid #ddd;
+.col-title {
+	margin-top: 0;
+	font-weight: bold;
+}
+
+.sigmar {
+	font-family: 'Sigmar One', sans;
+}
+
+.input-group {
+	margin-bottom: 20px;
+}
+
+/*SONG CSS*/
+.song {
+	border-radius: 5px;
+	border: 2px solid #ddd;
 	padding: 5px;
 	margin-bottom: 10px;
+	cursor: pointer;
 }
 
-#youtube_col .yt_result img {
+.song .thumbnail {
+	width: 60px;
 	height: 60px;
 	float: left;
-	margin-right: 20px;
+	margin-right: 10px;
 	margin-bottom: 0;
+}
+.song .lead {
+	font-size: 36px;
+}
+.song p {
+	margin-bottom: 0;
+}
+.song .active {
+	background: #222;
+	color: white;
+}
+.song .active p {
+	font-weight: bold;
+}
+
+.title {
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+
+.song button {
+	padding: 4px 8px 2px 9px;
+	font-size: 18px;
 }

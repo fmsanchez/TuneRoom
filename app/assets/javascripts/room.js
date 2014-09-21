@@ -45,5 +45,18 @@ var ready = function() {
 	});
 }
 
+function Song() {
+	var title = "";
+	var 
+}
+
+function Queue() {
+	var songs = {};
+	this.addSong = function(song) {
+		songs[song.id] = song;
+	}
+}
+
+
 
 $(document).ready(ready);

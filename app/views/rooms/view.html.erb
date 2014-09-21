@@ -1,14 +1,50 @@
 <div class="container">
-	<h1 class="page-header"><%= @room.name %></h1>
+	<h1 class="page-header sigmar"><%= @room.name %></h1>
 	<div class="row">
 		<div id="queue_col" class="col-md-4 col-xs-12">
-			<h2>Queue</h2>
+			<h2 class="text-center col-title">Queue</h2>
+			<div class="song">
+				<div class="thumbnail active">
+					<p class="lead text-center">1</p>
+				</div>
+				<p class="title">Tremenda Sata - <small>Arcangel</small></p>
+				<button class="pull-right btn btn-sm btn-default"><i class="fa fa-thumbs-up"></i></button><span> </span>
+				<button class="pull-right btn btn-sm btn-default"><i class="fa fa-thumbs-down"></i></button>
+				<p class="text-muted">3:04</p>
+				<div style="clear: both;"></div>
+			</div>
 		</div>
 		<div id="library_col" class="col-md-4 col-xs-12">
-			<h2>Library</h2>
+			<h2 class="text-center col-title">Library</h2>
+			<div class="input-group">
+				<input id="library-query" type="text" class="form-control">
+				<span class="input-group-btn">
+					<button id="library-search-button" class="btn btn-default" type="button">Search</button>
+				</span>
+			</div><!-- /input-group -->
+			<div class="song-pane">
+				<div class="song">
+					<div class="thumbnail">
+						<p class="lead text-center">1</p>
+					</div>
+					<p class="title">Tremenda Sata - <small>Arcangel</small></p>
+					<button class="pull-right btn btn-sm btn-info"><i class="fa fa-plus"></i></button>
+					<p class="text-muted">3:04</p>
+					<div style="clear: both;"></div>
+				</div>
+				<div class="song">
+					<div class="thumbnail">
+						<p class="position lead text-center">2</p>
+					</div>
+					<p class="title">Rocket - <small>Hardwell</small></p>
+					<button class="pull-right btn btn-sm btn-info"><i class="fa fa-plus"></i></button>
+					<p class="text-muted">2:56</p>
+					<div style="clear: both;"></div>
+				</div>
+			</div>
 		</div>
 		<div id="youtube_col" class="col-md-4 col-xs-12">
-			<h2>Youtube</h2>
+			<h2 class="text-center col-title">Youtube</h2>
 			<div class="input-group">
 				<input id="query" type="text" class="form-control">
 				<span class="input-group-btn">
@@ -19,7 +55,7 @@
 			</div>
 		</div>
 	</div>
-	<%= link_to "What", :controller => 'rooms', :action => 'send_mp3', :filename => 'what.mp3' %>
+	<!--<%= link_to "What", :controller => 'rooms', :action => 'send_mp3', :filename => 'what.mp3' %>-->
 	<div id="response"></div>
 </div>
 
