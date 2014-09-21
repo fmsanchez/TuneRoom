@@ -4,6 +4,7 @@ capybara-*.html
 /log
 /tmp
 /db/*.sqlite3
+/db/schema.rb
 /public/system
 /coverage/
 /spec/tmp
@@ -12,6 +13,7 @@ rerun.txt
 pickle-email-*.html
 *.log  
 *.sqlite3
+
 
 # TODO Comment out these rules if you are OK with secrets being uploaded to the repo
 config/initializers/secret_token.rb

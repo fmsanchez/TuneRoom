@@ -43,7 +43,7 @@ class RoomsController < ApplicationController
 				end
 			end
 			ret = queue[pop_key]
-			ret['id'] = pop_key
+			ret['id'] = pop_keyg
 			queue.delete(pop_key)
 			queue = queue.to_s
 			room.update_attribute(:queue, queue)
