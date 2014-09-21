@@ -1,3 +1,5 @@
+public/youtube-*
+
 *.rbc
 capybara-*.html
 .rspec
