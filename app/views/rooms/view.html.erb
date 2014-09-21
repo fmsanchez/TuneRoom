@@ -5,19 +5,7 @@
 		<div id="queue_col" class="col-md-4 col-xs-12">
 			<h2 class="text-center col-title">Queue</h2>
 			<div class="queue-pane">
-				<% @queue.each do |key,song| %>
-				<div class="song">
-					<div class="thumbnail active">
-						<p class="lead text-center">1</p>
-					</div>
-					<p class="title"><%= song['title'] %> <br> <small><%= song['artist'] %></small></p>
-					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default tm-up"><i class="fa fa-thumbs-up"></i></button>
-					<span class="pull-right popularity"><%= song['popularity'] %></span>
-					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default tm-down"><i class="fa fa-thumbs-down"></i></button>
-					<p class="text-muted">3:04</p>
-					<div style="clear: both;"></div>
-				</div>
-				<% end %>
+				<%= render "songs_partial", :songs => @queue, :queue => true %>
 			</div>
 		</div>
 		<div id="library_col" class="col-md-4 col-xs-12">
@@ -28,19 +16,8 @@
 					<button id="library-search-button" class="btn btn-primary" type="button">Search</button>
 				</span>
 			</div><!-- /input-group -->
-			<div class="song-pane">
-				<% count = 1 %>
-				<% @library.each do |key, song| %>
-				<div class="song">
-					<div class="thumbnail">
-						<p class="lead text-center"><%= count %></p>
-					</div>
-					<p class="title"><%= song['title'] %> <br> <small><%= song['artist'] %></small></p>
-					<button data-id="<%= key %>" class="pull-right btn btn-sm btn-info btn-add"><i class="fa fa-plus"></i></button>
-					<p class="text-muted">3:04</p>
-					<div style="clear: both;"></div>
-				</div>
-				<% end %>
+			<div class="library-pane">
+				<%= render "songs_partial", :songs => @library, :queue => false%>
 			</div>
 		</div>
 		<div id="youtube_col" class="col-md-4 col-xs-12">
@@ -51,7 +28,7 @@
 					<button id="search-button" class="btn btn-primary" type="button" disabled="true">Search Youtube</button>
 				</span>
 			</div><!-- /input-group -->
-			<div id="search-container">
+			<div id="search-pane">
 			</div>
 		</div>
 	</div>

@@ -1,4 +1,9 @@
-
+#not_found img {
+	border: 2px solid black;
+	border-radius: 3px;
+	height: 300px;
+	margin-top: 20px;
+}
 
 .page-header {
 	margin: 20px 0 !important;

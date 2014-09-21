@@ -1,0 +1,35 @@
+<% c = 0 %>
+<% if queue %>
+	<% classes = "thumbnail active" %>
+<% else %>
+	<% classes = "thumbnail" %>
+<% end %>
+<% songs.each do |key,song| %>
+	<% c += 1 %>
+	<div class="song">
+		<div class="<%= classes %>">
+			<% if key.include?"youtube" %>
+				<img src="<%= song['thumbnail'] %>">
+			<% else %>
+				<p class="lead text-center"><%= c %></p>
+			<% end %>
+		</div>
+		<p class="title"><%= song['title'] %> <br> <small><%= song['artist'] %></small></p>
+		<% if queue %>
+			<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default">
+				<i class="fa fa-thumbs-up"></i>
+			</button>
+			<span class="pull-right popularity"><%= song['popularity'] %></span>
+			<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default">
+				<i class="fa fa-thumbs-down"></i>
+			</button>
+		<% else %>
+			<button data-id="<%= key %>" class="pull-right btn btn-sm btn-info">
+				<i class="fa fa-plus"></i>
+			</button>
+		<% end %>
+		<p class="text-muted"><%= song['duration'] %></p>
+		<div style="clear: both;"></div>
+	</div>
+	<% classes = "thumbnail" %>
+<% end %>

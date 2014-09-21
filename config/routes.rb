@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   post "/new" => "rooms#create"
   get "/serve_file" => "rooms#send_mp3"
+  get "/template" => "rooms#song_template"
+  get "/queue" => "rooms#queue"
   get "/:name" => "rooms#view"
   get "/:name/next" => "rooms#next"
   put "/:name/:song_id/up/:ammount" => "rooms#up_vote"
