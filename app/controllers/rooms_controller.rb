@@ -15,16 +15,18 @@ class RoomsController < ApplicationController
 	end
 
 	def view
-		name = params[:name]
-		@room = Room.find_by_name(name)
-		@library = eval(@room.library)
-		@queue = eval(@room.queue).sort_by{|k,v| v['popularity'].to_i}.reverse
+		@name = params[:name]
+		@room = Room.find_by_name(@name)
 		if @room == nil
-			raise ActionController::RoutingError.new("Not Found")
+			render "not_found"
+			return
 		end
+		@library = eval(@room.library || "") || []
+		@queue = eval(@room.queue || "") || []
+		@queue.sort_by{|k,v| v['popularity'].to_i}.reverse
 		respond_to do |format|
 			format.html
-		format.json { render :json => @room.to_json }
+			format.json { render :json => @queue.to_json }
 		end
 	end
 
@@ -97,6 +99,11 @@ class RoomsController < ApplicationController
 			room.update_attribute(:queue, queue.to_s)
 		end
 		render :json => song.to_json
+	end
+
+	def song_template
+		songs = params[:data]
+		render :partial => "songs_partial", :locals => {:songs => songs, :queue => false}
 	end
 
 end
