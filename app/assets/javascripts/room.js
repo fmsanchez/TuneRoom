@@ -35,6 +35,7 @@ var ready = function() {
 	var poll = function() {
 		$.get(location.pathname + ".json", function(data) {
 			console.log(data);
+			// read cookie
 		});
 	}
 
