@@ -24,10 +24,18 @@ class RoomsController < ApplicationController
 		@library = eval(@room.library || "") || []
 		@queue = eval(@room.queue || "") || []
 		@queue.sort_by{|k,v| v['popularity'].to_i}.reverse
-		respond_to do |format|
-			format.html
-			format.json { render :json => @queue.to_json }
+	end
+
+	def queue
+		@name = params[:name]
+		@room = Room.find_by_name(@name)
+		if @room == nil
+			render "not_found"
+			return
 		end
+		@queue = eval(@room.queue || "") || []
+		@queue.sort_by{|k,v| -v['popularity'].to_i}
+		render :partial => "songs_partial", :locals => {:songs => @queue, :queue => true}
 	end
 
 	def send_mp3
