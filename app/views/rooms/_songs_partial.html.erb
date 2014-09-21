@@ -14,7 +14,7 @@
 				<p class="lead text-center"><%= c %></p>
 			<% end %>
 		</div>
-		<p class="title"><%= song['title'] %> <br> <small><%= song['artist'] %></small></p>
+		<p class="title"><%= song['title'] %></p><span><small><%= song['artist'] %></small></span>
 		<% if queue %>
 			<button data-id="<%= key %>" class="pull-right btn btn-sm btn-default tm-up">
 				<i class="fa fa-thumbs-up"></i>

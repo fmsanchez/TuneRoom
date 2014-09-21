@@ -24,6 +24,7 @@
 
 /*SONG CSS*/
 .song {
+	height: 75px;
 	border-radius: 5px;
 	border: 2px solid #ddd;
 	padding: 5px;
@@ -32,7 +33,15 @@
 }
 .song-pane {
 	max-height: 400px;
-	overflow-y: scroll;
+	overflow-y: auto;
+}
+.song .title {
+	height: 20px;
+	overflow: hidden;
+	text-overflow; ellipsis;
+}
+.song button {
+	margin-top: 6px;
 }
 .song .thumbnail {
 	width: 60px;
@@ -70,7 +79,7 @@
 	font-size: 15px;
 	margin-bottom: 5px;
 }
-.queue-pane {
+.queue-pane, .library-pane {
 	max-height: 445px;
 	overflow-y: scroll;
 }

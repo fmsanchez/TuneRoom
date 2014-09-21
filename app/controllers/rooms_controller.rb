@@ -5,6 +5,7 @@ class RoomsController < ApplicationController
 		name = params["name"]
 		name = name.sub!(' ', '-')
 		library = params["library"]
+		p name
 		room = Room.find_by_name(name)
 		if room == nil
 			room = Room.create(name: name, library: library.to_s, queue: '{}')
@@ -23,7 +24,7 @@ class RoomsController < ApplicationController
 		end
 		@library = eval(@room.library || "{}")
 		@queue = eval(@room.queue || "{}")
-		@queue.sort_by{|k,v| -v['popularity'].to_i}
+		@queue = @queue.sort_by{|k,v| -v['popularity'].to_i}
 	end
 
 	def queue
@@ -34,7 +35,7 @@ class RoomsController < ApplicationController
 			return
 		end
 		@queue = eval(@room.queue || "") || []
-		@queue = @queue.sort_by{|k,v| v['popularity'].to_i}.reverse
+		@queue = @queue.sort_by{|k,v| -v['popularity'].to_i}
 		render :partial => "songs_partial.html", :locals => {:songs => @queue, :queue => true}
 	end
 
@@ -45,7 +46,7 @@ class RoomsController < ApplicationController
 
 	def next
 		room = Room.find_by_name(params[:name])
-		queue = eval(room.queue)
+		queue = eval(room.queue || "{}")
 		if queue.count > 0
 			popular = queue.first.last
 			pop_key = queue.first.first
