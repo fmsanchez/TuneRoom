@@ -95,6 +95,16 @@ class RoomsController < ApplicationController
 		name = params[:name]
 		song_id = params[:song_id].to_s
 		room = Room.find_by_name(name)
+
+		if song_id.include?"youtube"
+			video_id = song_id.split("youtube-")[1]
+			puts video_id
+			url = "http://www.youtube.com/watch?v="+video_id
+			command = `youtube-dl --extract-audio --audio-format mp3 #{url} -o #{Rails.root}/public/#{song_id}.mp3
+`
+			puts command
+		end
+
 		library = eval(room.library)
 		queue = eval(room.queue)
 		song = nil
