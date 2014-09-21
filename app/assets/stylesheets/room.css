@@ -67,6 +67,10 @@
 	overflow-y: scroll;
 }
 
+.selected {
+	background-color: #32a2cc;
+}
+
 .song button {
 	padding: 4px 8px 2px 9px;
 	font-size: 18px;
